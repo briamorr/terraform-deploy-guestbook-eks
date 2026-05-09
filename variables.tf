@@ -1,14 +1,11 @@
-variable "aws_access_key" {
-  description = "AWS access key"
+variable "aws_region" {
+  description = "AWS region where the EKS cluster exists"
   type        = string
+  default     = "us-east-1"
 }
 
-variable "aws_secret_key" {
-  description = "AWS secret key"
+variable "eks_cluster_name" {
+  description = "Name of the existing EKS cluster"
   type        = string
-}
-
-variable "eks_cluster_workspace_name" {
-  description = "EKS Cluster workspace name"
-  type        = string
+  default     = "student1-cluster"
 }
